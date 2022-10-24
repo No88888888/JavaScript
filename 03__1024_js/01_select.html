@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="title">DOM 조작</h1>
+  <p class="text">querySelector</p>
+  <p class="text">querySelectorAll</p>
+  <ul>
+    <li>Javascript</li>
+    <li>Python</li>
+  </ul>
+
+  <script>
+    // 선택 메서드 h1태그를 id값으로  선택
+    console.log(document.querySelector('#title'))
+
+    // 해당 웹페이지에 text 속성을 가진 태그를 모두 선택
+    // nodeList형식으로 반환해줌
+    console.log(document.querySelectorAll('.text'))
+
+    // 조건 만족 중 첫번째거 선택
+    console.log(document.querySelector('.text'))
+
+    // 경로 기준으로 선택하기
+    console.log(document.querySelectorAll('body > ul > li'))
+    
+    liTags = document.querySelectorAll('body > ul > li')
+
+    liTags.forEach(element => {
+      console.log(element)
+    })
+  </script>
+</body>
+</html>
