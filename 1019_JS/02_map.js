@@ -9,7 +9,7 @@ const newArry = numbers.map(doubleElement)
 console.log(newArry)
 
 // 2.
-const newArray = numbers,map(function (number) {
+const newArray = numbers.map(function (number) {
     return number * 2
 })
 

@@ -15,8 +15,11 @@ const numbers = [90, 80, 70, 100]
 
 // console.log(sumNum)
 
-const sumNum = numbers.reduce((result, number) => {
-    return result + number
-}, 0)
+// const sumNum = numbers.reduce((result, number) => {
+//     return result + number
+// }, 0)
 
-console.log(sumNum)
+// console.log(sumNum)
+
+const sum = numbers.reduce((res, number) => res + number, 0) / numbers.length
+console.log(sum)
